@@ -1,4 +1,4 @@
-<?php
+f<?php
 
 namespace App\Http\Controllers;
 
@@ -41,5 +41,6 @@ class HouseController extends Controller
     {
         // TASK: Return the $house->photo file from "storage/app/houses" folder
         // for download in browser
+        return Storage::download($house->photo);
     }
 }
